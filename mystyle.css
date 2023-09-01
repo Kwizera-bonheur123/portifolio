@@ -1,0 +1,501 @@
+body {
+    /* overflow-x: hidden; */
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #686F73;
+    top: 5%;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 30%;
+    padding: 10px;
+    z-index: 100;
+    position: fixed;
+    width: 70%;
+    height: 8%;
+    padding-left: 5%;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    margin: 0 15px;
+    font-weight: 800;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    border-bottom: 2px solid #09e9d2;
+    padding-bottom: 7px;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 479px) {
+    .navbar {
+        gap: 70%;
+        width: 100%;
+        border-radius: 0%;
+        margin-left: 0;
+        margin-right: 0;
+        top: 0%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 35px;
+        background-color: #494851;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        height: 800%;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .links li {
+        font-weight: 900;
+        font-size: large;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .toggle-menu:checked~.links {
+        display: flex;
+    }
+
+    .left {
+        /* background-image: url("DSC_9059 1.png"); */
+        background-color: red;
+        background-repeat: no-repeat;
+        width: 45%;
+    }
+
+    .right {
+        width: 55%;
+        background-color: red;
+    }
+}
+
+.con {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.cards11 {
+    padding: 20px 20px 0px 20px;
+    border: 3px solid #09e9d2;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px #676969;
+}
+
+.dardss {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card1 {
+    height: 200px;
+
+}
+
+
+.logo {
+    width: 50px;
+    height: 55px;
+}
+
+
+.left {
+    background-image: url("DSC_9059 1.png");
+    background-repeat: no-repeat;
+    width: 45%;
+}
+
+.right {
+    width: 55%;
+    background-color: #494851;
+}
+
+.right1 {
+    width: 50%;
+    background-color: #494851;
+}
+
+.circle {
+    background-color: #494851;
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    top: 20%;
+    position: relative;
+    right: 21%;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+
+.circle h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.desc {
+    position: relative;
+    z-index: 1;
+    top: 55px;
+    left: 50px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #68CEC8;
+}
+
+.desc p {
+    color: white;
+    text-align: left;
+    width: 75%;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+button {
+    position: relative;
+
+    top: 90px;
+    background-color: #494851;
+    border: 3px solid white;
+    left: 50px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 35px;
+    /* width: 32%; */
+}
+
+#me {
+    margin-left: -10px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 35px;
+    width: 32%;
+}
+
+.right1 {
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.right1 h1 {
+    font-weight: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: white;
+}
+
+.right1 h2 {
+    font-weight: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    color: #68CEC8;
+}
+
+.right1 p {
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
+    width: 80%;
+
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.more {
+    display: flex;
+    gap: 15px;
+}
+
+#age {
+    color: #68CEC8;
+}
+
+#value {
+    color: white;
+}
+
+.resume-container {
+    background-color: #494851;
+
+    margin: 0;
+    padding-top: 8%;
+    padding-bottom: 4%;
+}
+
+#myresume {
+    color: rgb(255, 255, 255);
+    font-weight: 80px;
+    text-align: center;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.education {
+    color: white;
+
+}
+
+.a {
+    background-color: #68CEC8;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.line {
+    background-color: white;
+    width: 3px;
+    height: 100%;
+    margin-left: 13px;
+}
+
+.design {
+    color: white;
+    margin-left: 12%;
+    margin-top: 6%;
+}
+
+.works {
+    background-color: #494851;
+    padding-bottom: 100px;
+
+    padding-top: 5%;
+    position: relative;
+
+}
+
+.works ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.works ul li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.works ul li:hover {
+    border-bottom: 2px solid #14ffef;
+    padding-bottom: 3px;
+}
+
+.works h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.works p {
+    color: white;
+    font-weight: 2rem;
+    font-family: serif;
+
+}
+
+button {
+    border-radius: 20px;
+    border: 3px solid white;
+    color: #09e9d2;
+    margin-left: 40%;
+    width: 15%;
+    font-size: 17px;
+    margin-top: -24px;
+}
+
+.works h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 80px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cards {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 25px;
+    margin-top: 80px;
+}
+
+.cards1 {
+    box-shadow: 5px 3px 4px 5px rgb(41, 43, 44);
+    border: 3px solid #09e9d2;
+    border-radius: 20px;
+    padding: 15px 15px 0px 15px;
+    color: white;
+    height: 75%;
+}
+
+.cards1 h3 {
+    font-weight: bolder;
+}
+
+.cards1 p {
+    font-weight: normal;
+}
+
+.card {
+    height: 55%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.contact {
+    background-color: #494851;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    margin: 0;
+
+}
+
+.contact-container h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: pass 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-container p {
+    color: white;
+    font-size: medium;
+
+}
+
+.contact-container h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.phone {
+    border: 1px solid #09e9d2;
+    background-color: #5a5862;
+    display: flex;
+    gap: 35px;
+    padding-left: 30px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.form {
+    border: 3px solid #09e9d2;
+    border-radius: 20px;
+    display: grid;
+    gap: 10px;
+    width: 40%;
+    padding: 0px 30px 30px 30px;
+}
+
+.form h1 {
+    color: #09e9d2;
+
+}
+
+.form label {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form input {
+    background-color: #494851;
+    border: 1px solid white;
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#submit {
+    margin-left: 23%;
+    width: 50%;
+    height: 50px;
+    border: 2px solid #09e9d2;
+    color: white;
+    font-weight: 30px;
+    font-size: 30px;
+}

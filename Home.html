@@ -1,147 +1,334 @@
 <html>
 
 <head>
-    <style>
-        .container {
-            display: flex;
-            width: 100vw;
-            height: 100%;
-        }
-
-        .links {
-            background-color: #686F73;
-            width: 100%;
-            height: 12%;
-            width: 80%;
-            position: fixed;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 2%;
-            align-items: center;
-            border-radius: 40px;
-            padding-left: 40px;
-            padding-top: 14px;
-
-        }
-
-        ul {
-
-            padding-right: 15%;
-            float: right;
-            display: flex;
-            gap: 24px;
-
-        }
-
-        .logo {
-            width: 50px;
-            height: 65px;
-        }
-
-        ul li {
-            text-align: right;
-            list-style: none;
-            font-weight: bolder;
-            font-size: 20px;
-            color: white;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .left {
-            background-image: url("DSC_9059 1.png");
-            background-repeat: no-repeat;
-            background-color: #494851;
-            width: 50%;
-        }
-
-        .right {
-            width: 50%;
-            background-color: #494851;
-        }
-
-        .circle {
-            background-color: #494851;
-            width: 40%;
-            height: 40%;
-            border-radius: 100%;
-            top: 20%;
-            position: relative;
-            right: 23%;
-            padding-left: 80px;
-            padding-top: 40px;
-        }
-
-        .circle h1 {
-            color: white;
-            font-weight: bold;
-            font-size: 50px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        .desc {
-            position: relative;
-            z-index: 1;
-            top: 55px;
-            left: 50px;
-            font-weight: bold;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: #68CEC8;
-        }
-
-        .desc p {
-            color: white;
-            text-align: left;
-            width: 75%;
-            font-size: 20px;
-            font-weight: normal;
-        }
-
-        button {
-            position: relative;
-
-            top: 90px;
-            background-color: #494851;
-            border: 3px solid white;
-            left: 50px;
-            font-size: 15px;
-            color: white;
-            font-weight: bold;
-            padding: 20px;
-            border-radius: 35px;
-            width: 32%;
-        }
-    </style>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="./fonts/css/all.css">
     <title>Portifolio</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="links">
-            <img class="logo" src="Group 11 (1).png">
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT ME</li>
-                <li>RESUME</li>
-                <li>MY WORKS</li>
-                <li>CONTACT ME</li>
-            </ul>
-        </div>
+    <nav class="navbar">
 
-        <div class="left">
+        <h1 style="color: #14ffef; font-size: 40px; font-weight: bold;">KB</h1>
+        <input type="checkbox" id="toggle-menu" class="toggle-menu">
+        <label for="toggle-menu" class="menu-icon">&#9776;</label>
+        <!-- <label for="toggle-menu"> -->
+        <ul class="links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#resume">RESUME</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
 
-        </div>
-        <div class="right">
-            <div class="circle">
-                <h1>KWIZERA<br>Bonheur</h1>
+        </ul>
+        <!-- </label> -->
+    </nav>
+    <div class="home" id="home">
+        <div class="container">
+
+
+            <div class="left">
             </div>
-            <div class="desc">
-                <h1>Web developer</h1>
-                <p>
-                    Hello! I am Web Developer from United States, New York. I have rich experience in web site design
-                    and building, also I am good at wordpress. I love to talk with you about our unique.
+            <div class="right">
+                <div class="circle">
+                    <h1>KWIZERA<br>Bonheur</h1>
+                </div>
+                <div class="desc">
+                    <h1>Web developer</h1>
+                    <p>
+                        Hello! I am Web Developer from United States, New York. I have rich experience in web site
+                        design
+                        and building, also I am good at wordpress. I love to talk with you about our unique.
+                    </p>
+                </div>
+                <button id="me">CONTACT ME</button>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="left"></div>
+            <div class="right1">
+                <h1>ABOUT ME</h1>
+                <h2>My story</h1>
+                    <p>Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue
+                        blandit
+                        nunc, eu sollicitudin urna dolor sagittis lacus. Pellentesque posuere. Praesent turpis. Aenean
+                        posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis
+                        lacus.<br><br>
+
+                        Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue
+                        blandit
+                        nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a,
+                        suscipit non, turpis.
+                    </p>
+                    <div class="info">
+                        <div class="more">
+                            <h3 id="age">AGE: </h3>
+                            <h3 id="value">21</h3>
+                        </div>
+                        <div class="more">
+                            <h3 id="age">FREELANCE: </h3>
+                            <h3 id="value">Available</h3>
+                        </div>
+                        <div class="more">
+                            <h3 id="age">PHONE </h3>
+                            <h3 id="value">+250781454225</h3>
+                        </div>
+                        <div class="more">
+                            <h3 id="age">RESIDENCE </h3>
+                            <h3 id="value">RWANDA</h3>
+                        </div>
+                        <div class="more">
+                            <h3 id="age">ADDRESS: </h3>
+                            <h3 id="value">Rwanda, Huye</h3>
+                        </div>
+                        <div class="more">
+                            <h3 id="age">EMAIL: </h3>
+                            <h3 id="value">kbonheur123@gmail.com</h3>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="resume-container" id="resume">
+        <h1 id="myresume">MY RESUME</h1>
+        <div class="resume">
+            <div class="education">
+                <h1 style="margin-left: 12%;">Education Qualification</h1>
+                <div style="display: flex; gap: 50px;">
+                    <div>
+                        <div class="a"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div>
+                        <h3 style="color:#14ffef; font-weight:bold; margin-top: 1px;">2015 - 2021</h3>
+                        <h3>High School Graduation</h3>
+                        <h4>Runda TVET SCHOOL</h4>
+                        <p style="width: 68%; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed consectetur
+                            donec gravida
+                            ullamcorper cum id. Sit viverra donec in ornare euismod.</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 50px;">
+                    <div>
+                        <div class="a"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div>
+                        <h3 style="color:#14ffef; font-weight:bold; margin-top: 1px;">2015 - 2021</h3>
+                        <h3>High School Graduation</h3>
+                        <h4>Runda TVET SCHOOL</h4>
+                        <p style="width: 68%; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed consectetur
+                            donec gravida
+                            ullamcorper cum id. Sit viverra donec in ornare euismod.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <h1 style="margin-left: 12%;">Working Experience</h1>
+                <div style="display: flex; gap: 50px;">
+                    <div>
+                        <div class="a"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div>
+                        <h3 style="color:#14ffef; font-weight:bold; margin-top: 1px;">2019 - 2021</h3>
+                        <h3>UI/UX Designer</h3>
+                        <h4>ABC Company</h4>
+                        <p style="width: 68%; font-size: 17px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed consectetur
+                            donec gravida
+                            ullamcorper cum id. Sit viverra donec in ornare euismod.</p>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 50px;">
+                    <div>
+                        <div class="a"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div>
+                        <h3 style="color:#14ffef; font-weight:bold; margin-top: 1px;">2021 - 2024</h3>
+                        <h3>Front-end developer</h3>
+                        <h4>CDE Company LTD</h4>
+                        <p style="width: 68%; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed consectetur
+                            donec gravida
+                            ullamcorper cum id. Sit viverra donec in ornare euismod.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="design">
+                <h1>Design Skills</h1>
+                <div>
+                    <h3 style="color: #14ffef;">Web layout</h3>
+                    <p style="width: 68%; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed consectetur
+                        donec gravida
+                        ullamcorper cum id. Sit viverra donec in ornare euismod.
+                    </p>
+                    <h2 style="margin-left: 70%; color: #14ffef; margin-top: -30px;">90%</h2>
+                    <div style="width: 80%; height: 4px; background-color: #A7B5B4;">
+                        <div style="width: 90%; height: 4px; background-color: #14ffef;"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: #14ffef;">Photoshop</h3>
+                    <p style="width: 68%; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed consectetur
+                        donec gravida
+                        ullamcorper cum id. Sit viverra donec in ornare euismod.
+                    </p>
+                    <h2 style="margin-left: 70%; color: #14ffef; margin-top: -30px;">75%</h2>
+                    <div style="width: 80%; height: 4px; background-color: #A7B5B4;">
+                        <div style="width: 74%; height: 4px; background-color: #14ffef;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="design">
+                <h1>Language Skills</h1>
+                <div>
+                    <h3 style="color: #14ffef;">English</h3>
+                    <p style="width: 68%; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed consectetur
+                        donec gravida
+                        ullamcorper cum id. Sit viverra donec in ornare euismod.
+                    </p>
+                    <h2 style="margin-left: 70%; color: #14ffef; margin-top: -30px;">95%</h2>
+                    <div style="width: 80%; height: 4px; background-color: #A7B5B4;">
+                        <div style="width: 95%; height: 4px; background-color: #14ffef;"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: #14ffef;">Kinyarwanda</h3>
+                    <p style="width: 68%; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed consectetur
+                        donec gravida
+                        ullamcorper cum id. Sit viverra donec in ornare euismod.
+                    </p>
+                    <h2 style="margin-left: 70%; color: #14ffef; margin-top: -30px;">96%</h2>
+                    <div style="width: 80%; height: 4px; background-color: #A7B5B4;">
+                        <div style="width: 97%; height: 4px; background-color: #14ffef;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="works" id="works">
+        <h1>MY WORKS</h1>
+        <ul>
+            <li>All</li>
+            <li>UI/UX Design</li>
+            <li>HTML&CSS</li>
+            <li>React js</li>
+            <li>Node js</li>
+        </ul>
+        <div class=" con dardss">
+            <div class="cards11">
+                <div class="card1">
+                    <img src="./Rectangle 20.png">
+                </div>
+                <h3>UI/UX Sample </h3>
+                <p>Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel
+                    mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius
                 </p>
             </div>
-            <button>CONTACT ME</button>
+            <div class="cards11">
+                <div class="card1">
+                    <img src="./download (10).jpg">
+                </div>
+                <h3>UI/UX Sample </h3>
+                <p>Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel
+                    mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius
+                </p>
+            </div>
+            <div class="cards11">
+                <div class="card1">
+                    <img src="./download (11).jpg">
+                </div>
+                <h3>UI/UX Sample </h3>
+                <p>Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel
+                    mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius
+                </p>
+            </div>
+            <div class="cards11">
+                <div class="card1">
+                    <img src="./download (9).jpg">
+                </div>
+                <h3>UI/UX Sample </h3>
+                <p>Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel
+                    mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius
+                </p>
+            </div>
+            <div class="cards11">
+                <div class="card1">
+                    <img src="./images (6).jpg">
+                </div>
+                <h3>UI/UX Sample </h3>
+                <p>Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel
+                    mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius
+                </p>
+            </div>
+            <div class="cards11">
+                <div class="card1">
+                    <img src="./images (7).jpg">
+                </div>
+                <h3>UI/UX Sample </h3>
+                <p>Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel
+                    mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius
+                </p>
+            </div>
+        </div>
+        <button>Read more</button>
+    </div>
+    <div class="contact" id="contact">
+        <div class="contact-container">
+            <div style="display: grid; gap:15px">
+                <div>
+                    <h1>Contact information</h1>
+                    <p style="width: 370px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis, iusto
+                        harum possimus non
+                        praesentium qui facere.</p>
+                </div>
+                <div class="phone">
+                    <div style=" padding-top: 8%; font-size: 30px;">
+                        <div style="background-color: #cefffc; border-radius: 100%; padding: 17px 17px 17px 17px;">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Contact me on phone</h2>
+                        <p>+250 781 454 225</p>
+                        <p>+250 789 191 754</p>
+                    </div>
+                </div>
+                <div class="phone">
+                    <div style=" padding-top: 8%; font-size: 30px;">
+                        <div style="background-color: #cefffc; border-radius: 100%; padding: 17px 17px 17px 17px;">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Contact me on Email</h2>
+                        <p>kbonheur123@gmail.com</p>
+                        <p>kwizerabonheur222008567@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h1>Contact form</h1>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your names...">
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email">
+                <label>Message:</label>
+                <input type="textarea">
+                <input type="submit" value="SEND" id="submit">
+            </div>
         </div>
     </div>
 </body>
