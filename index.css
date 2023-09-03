@@ -1,0 +1,711 @@
+.navbar {
+    background-color: #686F73;
+    top: 5%;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 30%;
+    padding: 10px;
+    z-index: 100;
+    position: fixed;
+    width: 70%;
+    height: 8%;
+    padding-left: 5%;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    margin: 0 15px;
+    font-weight: 800;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    border-bottom: 2px solid #09e9d2;
+    padding-bottom: 7px;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 34px;
+    cursor: pointer;
+    display: none;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+.left {
+    background-image: url("DSC_9059 1.png");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.left2 {
+    background-image: url("DSC_9059 1.png");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.right {
+    width: 100%;
+    padding-left: 5%;
+    background-color: #494851;
+}
+
+.circle {
+    background-color: #494851;
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    top: 20%;
+    position: relative;
+    right: 36%;
+    padding-left: 80px;
+    padding-top: 60px;
+}
+
+.circle h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.desc {
+    position: relative;
+    z-index: 1;
+    top: 55px;
+    left: 50px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #68CEC8;
+}
+
+.desc p {
+    color: white;
+    text-align: left;
+    width: 75%;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.desc h1 {
+    font-size: 21px;
+}
+
+#me {
+    margin-left: -10px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 35px;
+    width: 32%;
+}
+
+button {
+    position: relative;
+    top: 90px;
+    background-color: #494851;
+    border: 3px solid white;
+    left: 50px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 35px;
+    /* width: 32%; */
+}
+
+.right1 {
+    padding-top: 6%;
+    padding-left: 5%;
+    width: 100%;
+    background-color: #494851;
+}
+
+.right1 h1 {
+    font-weight: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: white;
+}
+
+.right1 h2 {
+    font-weight: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+    color: #68CEC8;
+}
+
+.right1 p {
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
+    width: 80%;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.more {
+    display: flex;
+    gap: 15px;
+}
+
+#age {
+    color: #68CEC8;
+}
+
+#value {
+    color: white;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+}
+
+.a {
+    background-color: #68CEC8;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.line {
+    background-color: white;
+    width: 3px;
+    height: 100%;
+    margin-left: 13px;
+}
+
+.resume-container {
+    background-color: #494851;
+
+    margin: 0;
+    padding-top: 8%;
+    padding-bottom: 4%;
+}
+
+.education p {
+    width: 68%;
+}
+
+.design p {
+    width: 68%;
+}
+
+#myresume {
+    color: rgb(255, 255, 255);
+    font-weight: 80px;
+    text-align: center;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.education {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.design {
+    color: white;
+    margin-left: 14%;
+    margin-top: 6%;
+}
+
+.works {
+    background-color: #494851;
+    padding-bottom: 100px;
+
+    padding-top: 5%;
+    position: relative;
+
+}
+
+.works ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.works h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.works p {
+    color: white;
+    font-weight: 2rem;
+    font-family: serif;
+
+}
+
+button {
+    border-radius: 20px;
+    border: 3px solid white;
+    color: #09e9d2;
+    margin-left: 40%;
+    width: 15%;
+    font-size: 17px;
+    margin-top: -24px;
+}
+
+.works h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 80px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.works ul {
+    margin-left: 8%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.works ul li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.works ul li:hover {
+    border-bottom: 2px solid #14ffef;
+    padding-bottom: 3px;
+}
+
+.cards {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 25px;
+    margin-top: 80px;
+}
+
+.cards11 {
+    border: 2px solid #686F73;
+    padding: 10%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px #c2e3e0;
+}
+
+.cards11:hover {
+    width: 100%;
+}
+
+.con {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.dardss {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.cards1 h3 {
+    font-weight: bolder;
+}
+
+.cards1 p {
+    font-weight: normal;
+}
+
+.card {
+    height: 55%;
+}
+
+.card1 {
+    height: 200px;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.contact {
+    background-color: #494851;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    margin: 0;
+
+}
+
+.contact-container h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: pass 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-container p {
+    color: white;
+    font-size: medium;
+
+}
+
+.contact-container h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.phone {
+    border: 1px solid #09e9d2;
+    background-color: #5a5862;
+    display: flex;
+    gap: 35px;
+    padding-left: 30px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.icon {
+    background-color: #cefffc;
+    border-radius: 100%;
+    padding: 17px 17px 17px 17px;
+}
+
+.form {
+    border: 3px solid #09e9d2;
+    border-radius: 20px;
+    display: grid;
+    gap: 10px;
+    width: 40%;
+    padding: 0px 30px 30px 30px;
+}
+
+.form h1 {
+    color: #09e9d2;
+
+}
+
+.form label {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form input {
+    background-color: #494851;
+    border: 1px solid white;
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#submit {
+    margin-left: 23%;
+    width: 50%;
+    height: 50px;
+    border: 2px solid #09e9d2;
+    color: white;
+    font-weight: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 479px) {
+    .navbar {
+        background-color: #686F73;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        border-radius: 0;
+        top: 0;
+        gap: 70%;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 35px;
+        background-color: #494851;
+        position: absolute;
+        top: 67px;
+        left: 0;
+        width: 100%;
+        height: 800%;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .links li {
+        font-weight: 900;
+        font-size: large;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .toggle-menu:checked~.links {
+        display: flex;
+    }
+
+    .container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        margin-top: 14%;
+        background-image: url("DSC_9059 11.png");
+        /* background-color: #494851; */
+        /* background-color: red; */
+        aspect-ratio: 1/1;
+        /* object-fit: cover; */
+        background-repeat: no-repeat;
+    }
+
+    .right {
+        margin-top: -32%;
+        width: 100%;
+        background-color: #494851;
+        height: auto;
+    }
+
+    .circle {
+
+        background-color: #494851;
+        width: 50%;
+        height: 30%;
+        border-radius: 100%;
+        top: 40%;
+        position: absolute;
+        right: 42%;
+        left: 10%;
+        padding: 14%;
+    }
+
+    .circle h1 {
+        margin-top: -9px;
+        margin-left: 40px;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .desc {
+        top: 16px;
+    }
+
+    #me {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .desc p {
+        text-align: center;
+        font-family: 20px;
+        font-size: small;
+    }
+
+    .desc h1 {
+        margin-left: 25%;
+        font-family: 32px;
+        font-size: medium;
+    }
+
+    button {
+        top: 30px;
+        left: 35%;
+        padding: 15px;
+        font-size: small;
+    }
+
+    .right1 {
+        padding-left: 10%;
+        padding-top: 15%;
+        width: 100%;
+    }
+
+    .right1 h1 {
+        font-size: 26px;
+    }
+
+    .right1 h2 {
+        font-size: 18px;
+    }
+
+    .right1 p {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    #age {
+        font-size: 15px;
+        color: #68CEC8;
+    }
+
+    #value {
+        font-size: 15px;
+        color: white;
+    }
+
+    .resume {
+        padding-right: 0%;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr;
+    }
+
+    .resume-container {
+
+        width: 100%;
+        padding-top: 12%;
+        margin-right: 0%;
+        padding-left: 1%;
+    }
+
+    .education h1 {
+        font-size: 20px;
+    }
+
+    .education h3 {
+        font-size: 16px;
+    }
+
+    .education h4 {
+        font-size: 13px;
+    }
+
+    .education p {
+        width: 80%;
+        font-size: small;
+        font-weight: normal;
+        font-size: 13px;
+    }
+
+
+    .design {
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+
+    .dardss {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .works ul li {
+        font-size: 12px;
+    }
+
+    .works ul {
+        margin-left: 2%;
+        width: 80%;
+
+    }
+
+    .works button {
+        margin-top: 5px;
+        left: -13%;
+        width: 45%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phone {
+        gap: 20px;
+        width: 85%;
+
+    }
+
+    .phone h2 {
+        font-size: 17px;
+    }
+
+    .phone p {
+        font-size: 13px;
+    }
+
+    .icon {
+        border-radius: 100%;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .form {
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    #submit {
+        font-weight: bolder;
+        font-size: 100%;
+        cursor: pointer;
+    }
+
+    #submit:hover {
+        background-color: #09e9d2;
+        color: #494851;
+    }
+}
