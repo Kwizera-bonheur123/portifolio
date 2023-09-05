@@ -511,6 +511,7 @@ img {
     }
 
     .left {
+        left: 0;
         margin-top: 14%;
         background-image: url("DSC_9059 11.png");
         background-position: center;
@@ -620,10 +621,9 @@ img {
 
     .resume-container {
 
-        width: 100%;
+        width: 120%;
         padding-top: 12%;
         margin-right: 0%;
-        padding-left: 1%;
     }
 
     .education h1 {
