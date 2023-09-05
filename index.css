@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .navbar {
     background-color: #686F73;
     top: 5%;
@@ -462,7 +466,7 @@ img {
 
 @media (max-width: 480px) {
     .navbar {
-        background-color: red;
+        background-color: #686F73;
         margin-left: 0;
         margin-right: 0;
         width: 79%;
