@@ -462,7 +462,7 @@ img {
 
 @media (max-width: 480px) {
     .navbar {
-        background-color: #686F73;
+        background-color: red;
         margin-left: 0;
         margin-right: 0;
         width: 79%;
