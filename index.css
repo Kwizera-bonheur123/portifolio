@@ -465,7 +465,7 @@ img {
         background-color: #686F73;
         margin-left: 0;
         margin-right: 0;
-        width: 100%;
+        width: 79%;
         border-radius: 0;
         top: 0;
         gap: 70%;
@@ -621,7 +621,7 @@ img {
 
     .resume-container {
 
-        width: 120%;
+        width: 100%;
         padding-top: 12%;
         margin-right: 0%;
     }
