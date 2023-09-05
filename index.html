@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./fonts/css/all.css">
     <title>Portifolio</title>
@@ -317,7 +318,7 @@
                     </div>
                 </div>
             </div>
-            <form class="form" id="contactForm" method="post" onsubmit="return validateForm()">
+            <form class="form" id="contactForm" onsubmit="validateForm()">
                 <h1>Contact form</h1>
                 <label>Name:</label>
                 <input type="text" id="name" placeholder="Enter your names...">
@@ -332,8 +333,25 @@
             </form>
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+        // function sendEmail(e) {
+        //     e.preventDefault();
+        //     Email.send({
+        //         Host: "smtp.gmail.com",
+        //         Username: "kbonheur123@gmail.com",
+        //         Password: "kwizera123",
+        //         To: 'kbonheur123@gmail.com',
+        //         From: "kwizerabonheur222008567@gmail.com",
+        //         Subject: "This is the subject",
+        //         Body: "And this is the body"
+        //     }).then(
+        //         message => alert(message)
+        //     );
+        // }
         function validateForm() {
+
+            // code
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var message = document.getElementById('message').value;
@@ -353,6 +371,7 @@
                 isValid = false;
             }
 
+
             if (email === "") {
                 emailError.innerHTML = "Email is required";
                 isValid = false;
@@ -370,8 +389,19 @@
                 isValid = false;
             }
 
-            return isValid;
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "kbonheur123@gmail.com",
+                Password: "24C55E98C30CD481048C91E571ABBB10E526",
+                To: 'kwizerabonheur222008567@gmail.com',
+                From: email,
+                Subject: "This is the subject",
+                Body: `"name:"+${message}+"<br>"+"email:"+${email}+"Message:"+${message}`
+            }).then(
+                message => alert(message)
+            );
         }
+
     </script>
 
 </body>

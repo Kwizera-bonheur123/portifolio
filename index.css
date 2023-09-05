@@ -456,7 +456,11 @@ img {
     cursor: pointer;
 }
 
-@media (max-width: 479px) {
+.error {
+    color: red;
+}
+
+@media (max-width: 480px) {
     .navbar {
         background-color: #686F73;
         margin-left: 0;
@@ -509,14 +513,14 @@ img {
     .left {
         margin-top: 14%;
         background-image: url("DSC_9059 11.png");
-        /* background-color: #494851; */
-        /* background-color: red; */
+        background-position: center;
+        background-size: cover;
         aspect-ratio: 1/1;
-        /* object-fit: cover; */
         background-repeat: no-repeat;
     }
 
     .right {
+        padding-left: 0%;
         margin-top: -32%;
         width: 100%;
         background-color: #494851;
@@ -574,7 +578,7 @@ img {
     }
 
     .right1 {
-        padding-left: 10%;
+        padding-left: 0%;
         padding-top: 15%;
         width: 100%;
     }
