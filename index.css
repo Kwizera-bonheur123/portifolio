@@ -248,7 +248,6 @@ button {
 .works {
     background-color: #494851;
     padding-bottom: 100px;
-
     padding-top: 5%;
     position: relative;
 
@@ -329,10 +328,6 @@ button {
     padding: 10%;
     border-radius: 20px;
     box-shadow: 1px 1px 2px 2px #c2e3e0;
-}
-
-.cards11:hover {
-    width: 100%;
 }
 
 .con {
@@ -466,10 +461,13 @@ img {
 
 @media (max-width: 480px) {
     .navbar {
+        padding: 0%;
+        height: 10%;
         background-color: #686F73;
         margin-left: 0;
         margin-right: 0;
-        width: 79%;
+        width: 95%;
+        padding-left: 5%;
         border-radius: 0;
         top: 0;
         gap: 70%;
@@ -515,6 +513,7 @@ img {
     }
 
     .left {
+        width: 100%;
         left: 0;
         margin-top: 14%;
         background-image: url("DSC_9059 11.png");
@@ -533,12 +532,11 @@ img {
     }
 
     .circle {
-
         background-color: #494851;
         width: 50%;
         height: 30%;
         border-radius: 100%;
-        top: 40%;
+        top: 30%;
         position: absolute;
         right: 42%;
         left: 10%;
@@ -555,10 +553,14 @@ img {
     }
 
     .desc {
+        width: 80%;
+        left: 10%;
         top: 16px;
     }
 
     #me {
+        margin-left: -10%;
+        width: 50%;
         margin-top: 5px;
         font-size: 12px;
     }
@@ -567,6 +569,7 @@ img {
         text-align: center;
         font-family: 20px;
         font-size: small;
+        width: 100%;
     }
 
     .desc h1 {
@@ -589,6 +592,8 @@ img {
     }
 
     .right1 h1 {
+        margin-left: 10%;
+        position: relative;
         font-size: 26px;
     }
 
@@ -677,15 +682,39 @@ img {
         width: 45%;
     }
 
+    .contact {
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+
+    .contact-container h1 {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #p {
+        text-align: center;
+        position: relative;
+        width: 90%;
+        white-space: normal;
+        margin-left: 5%;
+    }
+
     .contact-container {
         display: flex;
         flex-direction: column;
     }
 
     .phone {
+        width: 100%;
+        padding-right: 5%;
+        padding-left: 5%;
         gap: 20px;
-        width: 85%;
-
+        margin-left: 5%;
+        width: 80%;
     }
 
     .phone h2 {
@@ -702,8 +731,10 @@ img {
     }
 
     .form {
+        width: 75%;
+        margin-left: 5%;
         margin-top: 10%;
-        width: 80%;
+        padding-right: 5%;
     }
 
     #submit {
