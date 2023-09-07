@@ -599,10 +599,12 @@ img {
     }
 
     .right1 h2 {
+        margin-left: 10%;
         font-size: 18px;
     }
 
     .right1 p {
+        margin-left: 10%;
         font-size: 15px;
         font-weight: normal;
     }
@@ -613,6 +615,7 @@ img {
     }
 
     #age {
+        margin-left: 10%;
         font-size: 15px;
         color: #68CEC8;
     }
@@ -634,6 +637,11 @@ img {
         width: 100%;
         padding-top: 12%;
         margin-right: 0%;
+    }
+
+    #myresume {
+        margin-left: 10%;
+        text-align: left;
     }
 
     .education h1 {
