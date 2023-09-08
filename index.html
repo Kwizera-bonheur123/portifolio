@@ -225,24 +225,24 @@
             <li>Node js</li>
         </ul>
         <div class=" con dardss">
-            <div class="cards11">
+            <a href="https://kwizera-bonheur123.github.io/Diction_web_app/" class="cards11">
                 <div class="card1">
-                    <img src="./Rectangle 20.png">
+                    <img src="./dictionary.PNG">
                 </div>
-                <h3>UI/UX Sample </h3>
+                <h3>DICTIONARY WEB APP </h3>
                 <p>Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel
                     mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius
                 </p>
-            </div>
-            <div class="cards11">
+            </a>
+            <a href="https://kwizera-bonheur123.github.io/To_do_list/" class="cards11">
                 <div class="card1">
-                    <img src="./download (10).jpg">
+                    <img src="./to do list.PNG">
                 </div>
-                <h3>UI/UX Sample </h3>
+                <h3>TO DO LIST</h3>
                 <p>Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel
                     mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius
                 </p>
-            </div>
+            </a>
             <div class="cards11">
                 <div class="card1">
                     <img src="./download (11).jpg">
@@ -284,7 +284,7 @@
     </div>
     <div class="contact" id="contact">
         <div class="contact-container">
-            <div style="display: grid; gap:15px">
+            <div style="display: grid; gap:15px; padding-bottom: 40px;">
                 <div>
                     <h1>Contact information</h1>
                     <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis,
@@ -373,20 +373,21 @@
                 messageError.innerHTML = "Message is required";
                 isValid = false;
             }
+            if (isValid != false) {
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "kbonheur123@gmail.com",
+                    Password: "24C55E98C30CD481048C91E571ABBB10E526",
+                    To: 'kwizerabonheur222008567@gmail.com',
+                    From: email,
+                    Subject: "This is the subject",
+                    Body: `"name:"+${message}+"<br>"+"email:"+${email}+"Message:"+${message}`
+                }).then(
+                    message => alert(message)
+                );
 
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "kbonheur123@gmail.com",
-                Password: "24C55E98C30CD481048C91E571ABBB10E526",
-                To: 'kwizerabonheur222008567@gmail.com',
-                From: email,
-                Subject: "This is the subject",
-                Body: `"name:"+${message}+"<br>"+"email:"+${email}+"Message:"+${message}`
-            }).then(
-                message => alert(message)
-            );
+            }
         }
-
     </script>
 
 </body>
