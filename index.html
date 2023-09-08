@@ -381,7 +381,7 @@
                     To: 'kwizerabonheur222008567@gmail.com',
                     From: email,
                     Subject: "This is the subject",
-                    Body: `"name:"+${message}+"<br>"+"email:"+${email}+"Message:"+${message}`
+                    Body: `name:${name}` + "<br>" + `email:${email}` + "<br>" + `Message:${message}`
                 }).then(
                     message => alert(message)
                 );
