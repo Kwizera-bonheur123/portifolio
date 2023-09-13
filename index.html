@@ -334,9 +334,10 @@
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        function validateForm() {
+        document.getElementById("submit").addEventListener("click", function (e) {
 
-            // code
+            e.preventDefault();
+
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var message = document.getElementById('message').value;
@@ -348,6 +349,9 @@
             nameError.innerHTML = "";
             emailError.innerHTML = "";
             messageError.innerHTML = "";
+
+
+            console.log(name);
 
             var isValid = true;
 
@@ -387,7 +391,7 @@
                 );
 
             }
-        }
+        })
     </script>
 
 </body>
