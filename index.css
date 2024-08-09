@@ -91,10 +91,14 @@ body {
 }
 
 .circle h1 {
-    color: white;
+    color: #68CEC8;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 45px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.circle h2{
+    color: white;
 }
 
 .desc {
@@ -133,14 +137,16 @@ button {
     position: relative;
     top: 90px;
     background-color: #494851;
-    border: 3px solid white;
     left: 50px;
     font-size: 15px;
-    color: white;
     font-weight: bold;
     padding: 20px;
-    border-radius: 35px;
-    /* width: 32%; */
+    border-radius: 20px;
+    border: 3px solid #09e9d2;
+    color: #09e9d2;
+    margin-left: 40%;
+    width: 15%;
+    margin-top: -24px;
 }
 
 .right1 {
@@ -234,15 +240,16 @@ button {
 }
 
 .education {
+    margin-top: 6%;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 .design {
+    margin-top: 6%;
     color: white;
     margin-left: 14%;
-    margin-top: 6%;
 }
 
 .works {
@@ -272,16 +279,6 @@ button {
     font-weight: 2rem;
     font-family: serif;
 
-}
-
-button {
-    border-radius: 20px;
-    border: 3px solid white;
-    color: #09e9d2;
-    margin-left: 40%;
-    width: 15%;
-    font-size: 17px;
-    margin-top: -24px;
 }
 
 .works h1 {
@@ -460,6 +457,121 @@ img {
     color: red;
 }
 
+.my-blog{
+    background-color: #494851;
+    height: 90vh;
+    padding: 3% 6%;
+  }
+  .my-blog h1{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: pass 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+.item{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    width: 450px;
+    height: 600px;
+    height: fit-content;
+    text-align: justify;
+    background-color: #494851;
+    border: 2px solid #09e9d2;
+    border-radius: 12px;
+    padding: 20px;
+    padding: 2% 1%;
+    gap:5px;
+    transition: 0.5s;
+    left: calc(43% - 110px);
+}
+
+#next-blog, #prev-blog{
+    position: relative;
+    top: 35%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 12%;
+    cursor: pointer;
+}
+#next-blog{
+    left: 88%;
+  z-index: 99;
+}
+
+
+.item img{
+    width: 100%;
+    max-height: 240px;
+  }
+ .item .title{
+    font-weight: medium;
+    color: white;
+    height: 70px;
+    margin-bottom: 3%;
+  }
+  .item .description{
+    color:rgb(225, 215, 215);
+    font-weight: 400;
+    font-size: 14px;
+    height: 80px;
+    margin-bottom: 3%;
+  }
+
+.item .profile{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    justify-content: flex-start;
+  }
+.item .profile img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+
+  .writter-name{
+    color: white;
+    font-size: 15px;
+  }
+
+  .writter-position{
+    font-weight: 100;
+    color: white;
+    font-size: 13px;
+  }
+
+  .reaction{
+    display: flex;
+    width: 55%;
+    gap: 6%;
+  }
+  .reaction .like{
+    display: flex;
+    align-items: center;
+  }
+
+  .reaction .like i{
+    color: #09e9d2;
+    font-size: 27px;
+  }
+  .reaction .like p{
+    color: white;
+  }
+
+  .item .footer{
+    display: flex;
+    align-items: center;
+  }
+
+
 @media (max-width: 480px) {
     .navbar {
         padding: 0%;
@@ -537,15 +649,20 @@ img {
         width: 50%;
         height: 30%;
         border-radius: 100%;
-        top: 30%;
+        top: 34%;
         position: absolute;
         right: 42%;
         left: 10%;
         padding: 14%;
     }
+    .circle h2{
+        margin-top: -29px;
+        font-size: 20px;
+        text-align: center;
+    }
 
     .circle h1 {
-        margin-top: -9px;
+        /* margin-top: -9px; */
         margin-left: 40px;
         color: white;
         font-weight: bold;
@@ -756,4 +873,79 @@ img {
         background-color: #09e9d2;
         color: #494851;
     }
+
+    .my-blog{
+        background-color: #494851;
+        height: 90vh;
+        padding: 3% 4%;
+      }
+      
+    .item{
+        gap:1px;
+        width: 320px;
+        border-radius: 12px;
+        padding: 20px;
+        padding: 4% 4%;
+        transition: 0.5s;
+        left: calc(36% - 110px);
+    }
+    
+    #next-blog, #prev-blog{
+        top: 25%;
+        z-index: 99;
+    }
+    #next-blog{
+        top: 30%;
+        left: 97%;
+    }
+    
+    
+    .item img{
+        width: 100%;
+        max-height: 240px;
+      }
+     .item .title{
+        height: 50px;
+        margin-bottom: 1%;
+        font-size: 16px;
+      }
+      .item .description{
+        font-weight: 400;
+        font-size: 14px;
+        height: 80px;
+        margin-bottom: 3%;
+      }
+    
+    .item .profile{
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        width: 100%;
+        justify-content: flex-start;
+      }
+    .item .profile img{
+        width: 45px;
+        height: 45px;
+      }
+    
+      .writter-name{
+        color: white;
+        font-size: 12px;
+      }
+    
+      .writter-position{
+        font-weight: 100;
+        color: white;
+        font-size: 13px;
+      }
+    
+      .reaction{
+        display: flex;
+        width: 55%;
+        gap: 10%;
+      }
+    
+      .reaction .like i{
+        color: #09e9d2;
+      }
 }
