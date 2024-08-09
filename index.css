@@ -657,7 +657,7 @@ img {
     }
     .circle h2{
         margin-top: -29px;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
     }
 
@@ -666,7 +666,7 @@ img {
         margin-left: 40px;
         color: white;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
@@ -877,28 +877,29 @@ img {
     .my-blog{
         background-color: #494851;
         height: 90vh;
-        padding: 3% 4%;
+        padding: 2% 4%;
       }
       
     .item{
         gap:1px;
-        width: 320px;
+        width: 280px;
         border-radius: 12px;
         padding: 20px;
         padding: 4% 4%;
         transition: 0.5s;
-        left: calc(36% - 110px);
+        left: calc(38% - 110px);
     }
     
     #next-blog, #prev-blog{
         top: 25%;
         z-index: 99;
+        left: -3%;
+        font-size: xx-large;
     }
     #next-blog{
         top: 30%;
-        left: 97%;
+        left: 98%;
     }
-    
     
     .item img{
         width: 100%;
